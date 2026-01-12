@@ -474,7 +474,6 @@ img{ display:block; max-width:100%; }
   width:64px;
   height:64px;
   object-fit:contain;
-
   background: rgba(255,255,255,.95);
   border: 1px solid rgba(255,255,255,.22);
   border-radius: 12px;
@@ -534,16 +533,6 @@ img{ display:block; max-width:100%; }
 .footer-copy{
   opacity:.85;
   font-size:.95rem;
-}
-
-/* Responsive */
-@media (max-width: 900px){
-  .help-grid{ grid-template-columns: 1fr; }
-  .cta-box{ flex-direction:column; align-items:flex-start; }
-  .info-row{ flex-direction:column; align-items:flex-start; }
-  .info-row .v{ text-align:left; }
-  .footer-grid{ grid-template-columns: 1fr; }
-  .faq-search{ align-items:stretch; }
 }
 
 /* Booking form */
@@ -606,3 +595,71 @@ img{ display:block; max-width:100%; }
 }
 
 .booking-confirmation{ text-align:center; }
+
+/* Responsive */
+@media (max-width: 900px){
+  .help-grid{ grid-template-columns: 1fr; }
+  .cta-box{ flex-direction:column; align-items:flex-start; }
+  .info-row{ flex-direction:column; align-items:flex-start; }
+  .info-row .v{ text-align:left; }
+  .footer-grid{ grid-template-columns: 1fr; }
+  .faq-search{ align-items:stretch; }
+}
+
+/* Mobile tweaks (phones) */
+@media (max-width: 640px){
+  .container{ width: min(var(--container), 100% - 20px); }
+
+  .header-inner{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+    padding:14px 0;
+  }
+
+  .logo{ width:48px; height:48px; }
+
+  .brand-title{ font-size:1.05rem; }
+  .brand-sub{ font-size:.92rem; }
+
+  .nav{
+    width:100%;
+    gap:8px;
+  }
+
+  .nav-link{
+    padding:10px 12px;
+    font-weight:800;
+  }
+
+  .hero-center{ padding:44px 0 32px; }
+  .lead{ font-size:1rem; }
+
+  .section{ padding:56px 0; }
+  .section-help{ padding-top:64px; }
+  .section-contact{ padding-top:64px; }
+
+  .cta-box{ padding:20px; }
+  .cta-actions{ width:100%; }
+  .cta-actions .btn{ width:100%; }
+
+  .btn-row{ width:100%; }
+  .btn-row .btn{ width:100%; }
+
+  .card{ padding:20px; }
+
+  .form-actions{ width:100%; }
+  .form-actions .btn{ width:100%; }
+
+  .footer{ padding:44px 0 16px; }
+  .footer-top{ padding-bottom:16px; }
+
+  .footer-logo{
+    width:58px;
+    height:58px;
+    padding:3px;
+    border-radius: 12px;
+  }
+
+  .footer-bottom-links{ gap:12px; }
+}
