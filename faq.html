@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skolehelsetjenesten | FAQ</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="accent-bar" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Hamar katedralskole - Forside">
+        <img src="assets/img/logo.png" alt="Hamar katedralskole" class="logo" />
+        <span class="brand-text">
+          <span class="brand-title">Hamar katedralskole</span>
+          <span class="brand-sub">Skolehelsetjenesten</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hovedmeny">
+        <a class="nav-link" href="index.html">Forside</a>
+        <a class="nav-link is-active" href="faq.html">FAQ</a>
+        <a class="nav-link" href="bestill.html">Bestill time</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <header class="page-head">
+      <h1>Ofte stilte spørsmål</h1>
+      <p class="lead">
+        Her finner du svar på vanlige spørsmål. Du kan også søke i spørsmålene.
+      </p>
+
+      <div class="faq-search">
+        <label class="sr-only" for="faqSearch">Søk i FAQ</label>
+        <input id="faqSearch" class="input" type="search" placeholder="Søk… f.eks. taushetsplikt, gratis, time" autocomplete="off">
+        <span class="faq-count" id="faqCount" aria-live="polite"></span>
+      </div>
+    </header>
+
+    <section class="section section-faq">
+      <div class="faq-list" id="faqList">
+        <article class="faq-item" data-tags="gratis pris betaling">
+          <h2 class="faq-h">
+            <button class="faq-q" type="button" aria-expanded="false">
+              Er skolehelsetjenesten gratis?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="faq-a" hidden>
+            <p>Ja. Skolehelsetjenesten er gratis for alle elever.</p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-tags="taushetsplikt konfidensielt foreldre">
+          <h2 class="faq-h">
+            <button class="faq-q" type="button" aria-expanded="false">
+              Har dere taushetsplikt?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="faq-a" hidden>
+            <p>
+              Ja. Vi har taushetsplikt, og samtaler behandles konfidensielt innenfor gjeldende regler.
+              Hvis det er alvorlig fare for liv og helse, kan det være nødvendig å involvere flere.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-tags="bestille time drop-in avtale">
+          <h2 class="faq-h">
+            <button class="faq-q" type="button" aria-expanded="false">
+              Må jeg bestille time?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="faq-a" hidden>
+            <p>
+              Du kan ofte komme innom, men vi anbefaler å bestille time for å sikre at vi har tid.
+              Bruk gjerne bestillingssiden for å sende en forespørsel.
+            </p>
+            <p><a class="link" href="bestill.html">Gå til bestilling</a></p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-tags="hva kan dere hjelpe med psykisk fysisk seksualitet">
+          <h2 class="faq-h">
+            <button class="faq-q" type="button" aria-expanded="false">
+              Hva kan jeg snakke med dere om?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="faq-a" hidden>
+            <p>
+              Du kan snakke med oss om det meste: stress, uro, søvn, vennskap, kropp, trivsel, seksualitet,
+              prevensjon, småplager og generelle spørsmål om helse.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-tags="akutt hjelp 113 legevakt haster">
+          <h2 class="faq-h">
+            <button class="faq-q" type="button" aria-expanded="false">
+              Hva gjør jeg hvis det haster?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="faq-a" hidden>
+            <p>
+              Hvis situasjonen er akutt, ta kontakt med legevakt eller ring <strong>113</strong>.
+              Du kan også kontakte en voksen du stoler på (lærer, rådgiver, foresatt).
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-tags="anonymt navn personvern">
+          <h2 class="faq-h">
+            <button class="faq-q" type="button" aria-expanded="false">
+              Kan jeg komme uten å si navnet mitt?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="faq-a" hidden>
+            <p>
+              Du kan alltid starte med å forklare situasjonen. I noen tilfeller trenger vi navn for å følge opp,
+              men vi prøver å gjøre det trygt og enkelt å ta kontakt.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="faq-empty" id="faqEmpty" hidden>
+        <p><strong>Ingen treff.</strong> Prøv et annet søkeord (f.eks. «taushetsplikt» eller «time»).</p>
+      </div>
+    </section>
+
+    <section class="section section-resources">
+      <div class="resources-card">
+        <h2 class="section-title">Nyttige ressurser</h2>
+        <p class="section-lead">
+          Hvis du trenger noen å snakke med utenom skolens åpningstider:
+        </p>
+        <ul class="resources-list">
+          <li><strong>Helsenorge</strong> – informasjon om helse og rettigheter</li>
+          <li><strong>Legevakt</strong> – ved akutt behov</li>
+          <li><strong>113</strong> – medisinsk nødhjelp (akutt)</li>
+        </ul>
+        <p class="small-note">Dette er en prototype – innhold kan tilpasses skolens offisielle informasjon.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <img src="assets/img/logo.png" alt="Hamar katedralskole" class="footer-logo" />
+        <div>
+          <div class="footer-brand-title">Hamar katedralskole</div>
+          <div class="footer-brand-sub">Skolehelsetjenesten</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Kontakt oss</h4>
+        <div class="footer-line"></div>
+        <p class="footer-item"><strong>Telefon:</strong> 12 34 56 78</p>
+        <p class="footer-item"><a href="#">Send e-post</a></p>
+        <p class="footer-item"><a href="#">Send sikker digital post</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Lenker</h4>
+        <div class="footer-line"></div>
+        <p class="footer-item"><a href="index.html">Forside</a></p>
+        <p class="footer-item"><a href="faq.html">FAQ</a></p>
+        <p class="footer-item"><a href="bestill.html">Bestill time</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Adresse</h4>
+        <div class="footer-line"></div>
+        <p class="footer-item"><strong>Besøksadresse</strong><br>Ringgata 235<br>2315 Hamar</p>
+        <p class="footer-item"><a href="#">Vis i kart</a></p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-bottom-links">
+        <a href="#">Personvern</a>
+        <a href="#">Informasjonskapsler (cookies)</a>
+        <a href="#">Tilgjengelighetserklæring</a>
+      </div>
+      <div class="footer-copy">© Hamar katedralskole</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

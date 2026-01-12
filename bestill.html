@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skolehelsetjenesten | Bestill time</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="accent-bar" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Hamar katedralskole - Forside">
+        <img src="assets/img/Logo.png" alt="Hamar katedralskole" class="logo" />
+        <span class="brand-text">
+          <span class="brand-title">Hamar katedralskole</span>
+          <span class="brand-sub">Skolehelsetjenesten</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hovedmeny">
+        <a class="nav-link" href="index.html">Forside</a>
+        <a class="nav-link" href="faq.html">FAQ</a>
+        <a class="nav-link is-active" href="bestill.html">Bestill time</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <header class="page-head center">
+      <h1>Bestill time</h1>
+      <p class="lead">
+        Send inn en forespørsel om time hos skolehelsetjenesten.
+      </p>
+    </header>
+
+    <section class="section section-booking">
+      <form
+        class="card booking-form"
+        method="post"
+        action="bestilltime.php"
+      >
+        <div class="form-row">
+          <label for="name">Navn</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="form-row">
+          <label for="class_name">Klasse</label>
+          <input id="class_name" name="class_name" type="text" required />
+        </div>
+
+        <div class="form-row">
+          <label for="email">E-post</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label for="requested_date">Ønsket dato</label>
+          <input id="requested_date" name="requested_date" type="date" required />
+        </div>
+
+        <div class="form-row">
+          <label for="topic">Tema</label>
+          <select id="topic" name="topic" required>
+            <option value="">Velg tema…</option>
+            <option>Psykisk helse</option>
+            <option>Fysisk helse</option>
+            <option>Seksualitet</option>
+            <option>Annet</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Kort beskrivelse (valgfritt)</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Skriv kort hva det gjelder…"
+          ></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">
+            Send forespørsel
+          </button>
+          <a href="faq.html" class="btn btn-ghost">Les FAQ</a>
+        </div>
+
+        <p class="form-note">
+          Ved akutt behov: kontakt legevakt eller ring <strong>113</strong>.
+        </p>
+      </form>
+
+      <div class="card booking-confirmation" id="sentMsg" hidden>
+        <h2>Forespørsel sendt</h2>
+        <p>Takk! Forespørselen er lagret i databasen.</p>
+        <a href="index.html" class="btn btn-primary">Tilbake til forsiden</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <img src="assets/img/Logo.png" alt="Hamar katedralskole" class="footer-logo" />
+        <div>
+          <div class="footer-brand-title">Hamar katedralskole</div>
+          <div class="footer-brand-sub">Skolehelsetjenesten</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Kontakt oss</h4>
+        <div class="footer-line"></div>
+        <p class="footer-item"><strong>Telefon:</strong> 12 34 56 78</p>
+        <p class="footer-item"><a href="#">Send e-post</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Lenker</h4>
+        <div class="footer-line"></div>
+        <p class="footer-item"><a href="index.html">Forside</a></p>
+        <p class="footer-item"><a href="faq.html">FAQ</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Adresse</h4>
+        <div class="footer-line"></div>
+        <p class="footer-item">
+          Ringgata 235<br />2315 Hamar
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-bottom-links">
+        <a href="#">Personvern</a>
+        <a href="#">Tilgjengelighet</a>
+      </div>
+      <div class="footer-copy">© Hamar katedralskole</div>
+    </div>
+  </footer>
+
+  <script>
+    const p = new URLSearchParams(location.search);
+    if (p.get("sent") === "1") {
+      document.getElementById("sentMsg").hidden = false;
+    }
+  </script>
+</body>
+</html>
