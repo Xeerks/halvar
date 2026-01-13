@@ -16,56 +16,67 @@
         <img src="assets/img/logo.png" alt="Hamar katedralskole" class="logo" />
         <span class="brand-text">
           <span class="brand-title">Hamar katedralskole</span>
-          <span class="brand-sub">Skolehelsetjenesten</span>
+          <span class="brand-sub" data-i18n="brand_sub">Skolehelsetjenesten</span>
         </span>
       </a>
 
-      <nav class="nav" aria-label="Hovedmeny">
-        <a class="nav-link is-active" href="index.html">Forside</a>
-        <a class="nav-link" href="faq.html">FAQ</a>
-        <a class="nav-link" href="bestill.html">Bestill time</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="nav" aria-label="Hovedmeny">
+          <a class="nav-link is-active" href="index.html" data-i18n="nav_home">Forside</a>
+          <a class="nav-link" href="faq.html" data-i18n="nav_faq">FAQ</a>
+          <a class="nav-link" href="bestill.html" data-i18n="nav_booking">Bestill time</a>
+        </nav>
+
+        <div class="lang-switch" aria-label="Language selector">
+          <label class="sr-only" for="langSelect">Language</label>
+          <select id="langSelect" class="lang-select">
+            <option value="nb">Bokmål</option>
+            <option value="nn">Nynorsk</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero" id="top">
       <div class="container hero-center">
-        <h1>Skolehelsetjenesten</h1>
-        <p class="lead">
+        <h1 data-i18n="hero_title">Skolehelsetjenesten</h1>
+        <p class="lead" data-i18n="hero_lead">
           Et lavterskeltilbud for deg som elev. Du kan snakke med oss om psykisk helse, fysisk helse og seksualitet.
         </p>
 
         <div class="btn-row">
-          <a class="btn btn-primary" href="bestill.html">Bestill time</a>
-          <a class="btn btn-ghost" href="#kontakt">Kontakt og åpningstider</a>
+          <a class="btn btn-primary" href="bestill.html" data-i18n="btn_book">Bestill time</a>
+          <a class="btn btn-ghost" href="#kontakt" data-i18n="btn_contact_hours">Kontakt og åpningstider</a>
         </div>
 
-        <p class="small-note">Hvis det haster: ta kontakt med lærer, legevakt eller 113.</p>
+        <p class="small-note" data-i18n="hero_note">Hvis det haster: ta kontakt med lærer, legevakt eller 113.</p>
       </div>
     </section>
 
     <section class="section section-help">
       <div class="container">
-        <h2 class="section-title center-title">Vi kan hjelpe med</h2>
-        <p class="section-lead center-lead">
+        <h2 class="section-title center-title" data-i18n="help_title">Vi kan hjelpe med</h2>
+        <p class="section-lead center-lead" data-i18n="help_lead">
           Her er noen vanlige temaer. Du trenger ikke “god grunn” for å ta kontakt.
         </p>
 
         <div class="help-grid">
           <article class="help-card">
-            <h3>Psykisk helse</h3>
-            <p>Stress, uro, søvn, motivasjon, vennskap og skolehverdag.</p>
+            <h3 data-i18n="help_card_mental_title">Psykisk helse</h3>
+            <p data-i18n="help_card_mental_text">Stress, uro, søvn, motivasjon, vennskap og skolehverdag.</p>
           </article>
 
           <article class="help-card">
-            <h3>Fysisk helse</h3>
-            <p>Småplager, hodepine, livsstil og generelle helse-spørsmål.</p>
+            <h3 data-i18n="help_card_physical_title">Fysisk helse</h3>
+            <p data-i18n="help_card_physical_text">Småplager, hodepine, livsstil og generelle helse-spørsmål.</p>
           </article>
 
           <article class="help-card">
-            <h3>Seksualitet</h3>
-            <p>Spørsmål, prevensjon og trygge samtaler – uten å dømme.</p>
+            <h3 data-i18n="help_card_sex_title">Seksualitet</h3>
+            <p data-i18n="help_card_sex_text">Spørsmål, prevensjon og trygge samtaler – uten å dømme.</p>
           </article>
         </div>
       </div>
@@ -75,15 +86,15 @@
       <div class="container">
         <div class="cta-box">
           <div class="cta-left">
-            <h2 class="cta-title">Vil du bestille time?</h2>
-            <p class="cta-text">
+            <h2 class="cta-title" data-i18n="cta_title">Vil du bestille time?</h2>
+            <p class="cta-text" data-i18n="cta_text">
               Dette er en prototype. Du kan sende en forespørsel, og vi viser bekreftelse på skjermen.
             </p>
           </div>
 
           <div class="cta-actions">
-            <a class="btn btn-primary" href="bestill.html">Gå til bestilling</a>
-            <a class="btn btn-ghost" href="faq.html">Les FAQ</a>
+            <a class="btn btn-primary" href="bestill.html" data-i18n="cta_btn_booking">Gå til bestilling</a>
+            <a class="btn btn-ghost" href="faq.html" data-i18n="cta_btn_faq">Les FAQ</a>
           </div>
         </div>
       </div>
@@ -91,48 +102,48 @@
 
     <section class="section section-contact" id="kontakt">
       <div class="container contact-stack">
-        <h2 class="section-title center-title">Kontakt og åpningstider</h2>
-        <p class="section-lead center-lead">
+        <h2 class="section-title center-title" data-i18n="contact_title">Kontakt og åpningstider</h2>
+        <p class="section-lead center-lead" data-i18n="contact_lead">
           Her finner du hvor vi er, hvordan du når oss og når vi er tilgjengelige.
         </p>
 
         <div class="info-card">
           <div class="info-head">
-            <h3>Kontakt</h3>
-            <span class="chip">Skolehelsetjenesten</span>
+            <h3 data-i18n="contact_card_title">Kontakt</h3>
+            <span class="chip" data-i18n="contact_chip">Skolehelsetjenesten</span>
           </div>
 
           <div class="info-rows">
             <div class="info-row">
-              <span class="k">E-post</span>
+              <span class="k" data-i18n="contact_email_k">E-post</span>
               <span class="v">skolehelse@skolen.no</span>
             </div>
             <div class="info-row">
-              <span class="k">Telefon</span>
+              <span class="k" data-i18n="contact_phone_k">Telefon</span>
               <span class="v">12 34 56 78</span>
             </div>
             <div class="info-row">
-              <span class="k">Hvor er vi?</span>
-              <span class="v">3. etasje, fløy 1 ved elevtjenesten</span>
+              <span class="k" data-i18n="contact_where_k">Hvor er vi?</span>
+              <span class="v" data-i18n="contact_where_v">3. etasje, fløy 1 ved elevtjenesten</span>
             </div>
           </div>
         </div>
 
         <div class="info-card">
           <div class="info-head">
-            <h3>Åpningstider</h3>
-            <span class="chip chip-soft">Man–Fre</span>
+            <h3 data-i18n="hours_title">Åpningstider</h3>
+            <span class="chip chip-soft" data-i18n="hours_chip">Man–Fre</span>
           </div>
 
           <ul class="hours-list">
-            <li><span>Mandag</span><span>09–14</span></li>
-            <li><span>Tirsdag</span><span>09–14</span></li>
-            <li><span>Onsdag</span><span>09–13</span></li>
-            <li><span>Torsdag</span><span>09–14</span></li>
-            <li><span>Fredag</span><span>09–11</span></li>
+            <li><span data-i18n="day_mon">Mandag</span><span>09–14</span></li>
+            <li><span data-i18n="day_tue">Tirsdag</span><span>09–14</span></li>
+            <li><span data-i18n="day_wed">Onsdag</span><span>09–13</span></li>
+            <li><span data-i18n="day_thu">Torsdag</span><span>09–14</span></li>
+            <li><span data-i18n="day_fri">Fredag</span><span>09–11</span></li>
           </ul>
 
-          <p class="hours-note">Ved behov kan du også avtale tid via bestillingsskjemaet.</p>
+          <p class="hours-note" data-i18n="hours_note">Ved behov kan du også avtale tid via bestillingsskjemaet.</p>
         </div>
       </div>
     </section>
@@ -141,48 +152,228 @@
   <footer class="footer">
     <div class="container footer-top">
       <div class="footer-brand">
-        <!-- Logo badge improves contrast on dark footer -->
         <img src="assets/img/logo.png" alt="Hamar katedralskole" class="footer-logo" />
         <div>
           <div class="footer-brand-title">Hamar katedralskole</div>
-          <div class="footer-brand-sub">Skolehelsetjenesten</div>
+          <div class="footer-brand-sub" data-i18n="brand_sub">Skolehelsetjenesten</div>
         </div>
       </div>
     </div>
 
     <div class="container footer-grid">
       <div class="footer-col">
-        <h4>Kontakt oss</h4>
+        <h4 data-i18n="footer_contact">Kontakt oss</h4>
         <div class="footer-line"></div>
-        <p class="footer-item"><strong>Telefon:</strong> 12 34 56 78</p>
-        <p class="footer-item"><a href="#">Send e-post</a></p>
-        <p class="footer-item"><a href="#">Send sikker digital post</a></p>
+        <p class="footer-item"><strong data-i18n="footer_phone_k">Telefon:</strong> 12 34 56 78</p>
+        <p class="footer-item"><a href="#" data-i18n="footer_email_link">Send e-post</a></p>
+        <p class="footer-item"><a href="#" data-i18n="footer_secure_post">Send sikker digital post</a></p>
       </div>
 
       <div class="footer-col">
-        <h4>Lenker</h4>
+        <h4 data-i18n="footer_links">Lenker</h4>
         <div class="footer-line"></div>
-        <p class="footer-item"><a href="index.html">Forside</a></p>
-        <p class="footer-item"><a href="faq.html">FAQ</a></p>
-        <p class="footer-item"><a href="bestill.html">Bestill time</a></p>
+        <p class="footer-item"><a href="index.html" data-i18n="nav_home">Forside</a></p>
+        <p class="footer-item"><a href="faq.html" data-i18n="nav_faq">FAQ</a></p>
+        <p class="footer-item"><a href="bestill.html" data-i18n="nav_booking">Bestill time</a></p>
       </div>
 
       <div class="footer-col">
-        <h4>Adresse</h4>
+        <h4 data-i18n="footer_address">Adresse</h4>
         <div class="footer-line"></div>
-        <p class="footer-item"><strong>Besøksadresse</strong><br>Ringgata 235<br>2315 Hamar</p>
-        <p class="footer-item"><a href="#">Vis i kart</a></p>
+        <p class="footer-item"><strong data-i18n="footer_visit">Besøksadresse</strong><br>Ringgata 235<br>2315 Hamar</p>
+        <p class="footer-item"><a href="#" data-i18n="footer_map">Vis i kart</a></p>
       </div>
     </div>
 
     <div class="container footer-bottom">
       <div class="footer-bottom-links">
-        <a href="#">Personvern</a>
-        <a href="#">Informasjonskapsler (cookies)</a>
-        <a href="#">Tilgjengelighetserklæring</a>
+        <a href="#" data-i18n="footer_privacy">Personvern</a>
+        <a href="#" data-i18n="footer_cookies">Informasjonskapsler (cookies)</a>
+        <a href="#" data-i18n="footer_accessibility">Tilgjengelighetserklæring</a>
       </div>
       <div class="footer-copy">© Hamar katedralskole</div>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      const translations = {
+        nb: {
+          page_title: "Skolehelsetjenesten | Hamar katedralskole",
+          brand_sub: "Skolehelsetjenesten",
+          nav_home: "Forside",
+          nav_faq: "FAQ",
+          nav_booking: "Bestill time",
+          hero_title: "Skolehelsetjenesten",
+          hero_lead: "Et lavterskeltilbud for deg som elev. Du kan snakke med oss om psykisk helse, fysisk helse og seksualitet.",
+          btn_book: "Bestill time",
+          btn_contact_hours: "Kontakt og åpningstider",
+          hero_note: "Hvis det haster: ta kontakt med lærer, legevakt eller 113.",
+          help_title: "Vi kan hjelpe med",
+          help_lead: "Her er noen vanlige temaer. Du trenger ikke “god grunn” for å ta kontakt.",
+          help_card_mental_title: "Psykisk helse",
+          help_card_mental_text: "Stress, uro, søvn, motivasjon, vennskap og skolehverdag.",
+          help_card_physical_title: "Fysisk helse",
+          help_card_physical_text: "Småplager, hodepine, livsstil og generelle helse-spørsmål.",
+          help_card_sex_title: "Seksualitet",
+          help_card_sex_text: "Spørsmål, prevensjon og trygge samtaler – uten å dømme.",
+          cta_title: "Vil du bestille time?",
+          cta_text: "Dette er en prototype. Du kan sende en forespørsel, og vi viser bekreftelse på skjermen.",
+          cta_btn_booking: "Gå til bestilling",
+          cta_btn_faq: "Les FAQ",
+          contact_title: "Kontakt og åpningstider",
+          contact_lead: "Her finner du hvor vi er, hvordan du når oss og når vi er tilgjengelige.",
+          contact_card_title: "Kontakt",
+          contact_chip: "Skolehelsetjenesten",
+          contact_email_k: "E-post",
+          contact_phone_k: "Telefon",
+          contact_where_k: "Hvor er vi?",
+          contact_where_v: "3. etasje, fløy 1 ved elevtjenesten",
+          hours_title: "Åpningstider",
+          hours_chip: "Man–Fre",
+          day_mon: "Mandag",
+          day_tue: "Tirsdag",
+          day_wed: "Onsdag",
+          day_thu: "Torsdag",
+          day_fri: "Fredag",
+          hours_note: "Ved behov kan du også avtale tid via bestillingsskjemaet.",
+          footer_contact: "Kontakt oss",
+          footer_phone_k: "Telefon:",
+          footer_email_link: "Send e-post",
+          footer_secure_post: "Send sikker digital post",
+          footer_links: "Lenker",
+          footer_address: "Adresse",
+          footer_visit: "Besøksadresse",
+          footer_map: "Vis i kart",
+          footer_privacy: "Personvern",
+          footer_cookies: "Informasjonskapsler (cookies)",
+          footer_accessibility: "Tilgjengelighetserklæring"
+        },
+        nn: {
+          page_title: "Skulehelsetenesta | Hamar katedralskole",
+          brand_sub: "Skulehelsetenesta",
+          nav_home: "Framside",
+          nav_faq: "FAQ",
+          nav_booking: "Bestill time",
+          hero_title: "Skulehelsetenesta",
+          hero_lead: "Eit lågterskeltilbod for deg som elev. Du kan snakke med oss om psykisk helse, fysisk helse og seksualitet.",
+          btn_book: "Bestill time",
+          btn_contact_hours: "Kontakt og opningstider",
+          hero_note: "Om det hastar: ta kontakt med lærar, legevakt eller 113.",
+          help_title: "Vi kan hjelpe med",
+          help_lead: "Her er nokre vanlege tema. Du treng ikkje “god grunn” for å ta kontakt.",
+          help_card_mental_title: "Psykisk helse",
+          help_card_mental_text: "Stress, uro, søvn, motivasjon, vennskap og skulekvardag.",
+          help_card_physical_title: "Fysisk helse",
+          help_card_physical_text: "Småplager, hovudpine, livsstil og generelle helsespørsmål.",
+          help_card_sex_title: "Seksualitet",
+          help_card_sex_text: "Spørsmål, prevensjon og trygge samtalar – utan å døme.",
+          cta_title: "Vil du bestille time?",
+          cta_text: "Dette er ein prototype. Du kan sende ein førespurnad, og vi viser stadfesting på skjermen.",
+          cta_btn_booking: "Gå til bestilling",
+          cta_btn_faq: "Les FAQ",
+          contact_title: "Kontakt og opningstider",
+          contact_lead: "Her finn du kvar vi er, korleis du når oss og når vi er tilgjengelege.",
+          contact_card_title: "Kontakt",
+          contact_chip: "Skulehelsetenesta",
+          contact_email_k: "E-post",
+          contact_phone_k: "Telefon",
+          contact_where_k: "Kvar er vi?",
+          contact_where_v: "3. etasje, fløy 1 ved elevtenesta",
+          hours_title: "Opningstider",
+          hours_chip: "Man–Fre",
+          day_mon: "Måndag",
+          day_tue: "Tysdag",
+          day_wed: "Onsdag",
+          day_thu: "Torsdag",
+          day_fri: "Fredag",
+          hours_note: "Ved behov kan du òg avtale tid via bestillingsskjemaet.",
+          footer_contact: "Kontakt oss",
+          footer_phone_k: "Telefon:",
+          footer_email_link: "Send e-post",
+          footer_secure_post: "Send sikker digital post",
+          footer_links: "Lenker",
+          footer_address: "Adresse",
+          footer_visit: "Besøksadresse",
+          footer_map: "Vis i kart",
+          footer_privacy: "Personvern",
+          footer_cookies: "Informasjonskapslar (cookies)",
+          footer_accessibility: "Tilgjengefråsegn"
+        },
+        en: {
+          page_title: "School Health Service | Hamar katedralskole",
+          brand_sub: "School Health Service",
+          nav_home: "Home",
+          nav_faq: "FAQ",
+          nav_booking: "Book appointment",
+          hero_title: "School Health Service",
+          hero_lead: "A low-threshold service for students. You can talk to us about mental health, physical health, and sexuality.",
+          btn_book: "Book appointment",
+          btn_contact_hours: "Contact & opening hours",
+          hero_note: "If it’s urgent: contact a teacher, emergency clinic, or call 113.",
+          help_title: "We can help with",
+          help_lead: "Here are some common topics. You don’t need a “good reason” to reach out.",
+          help_card_mental_title: "Mental health",
+          help_card_mental_text: "Stress, anxiety, sleep, motivation, friendships and school life.",
+          help_card_physical_title: "Physical health",
+          help_card_physical_text: "Minor issues, headaches, lifestyle and general health questions.",
+          help_card_sex_title: "Sexuality",
+          help_card_sex_text: "Questions, contraception and safe conversations — without judgment.",
+          cta_title: "Want to book an appointment?",
+          cta_text: "This is a prototype. You can send a request and we show a confirmation on screen.",
+          cta_btn_booking: "Go to booking",
+          cta_btn_faq: "Read FAQ",
+          contact_title: "Contact & opening hours",
+          contact_lead: "Here you’ll find where we are, how to reach us and when we’re available.",
+          contact_card_title: "Contact",
+          contact_chip: "School Health Service",
+          contact_email_k: "Email",
+          contact_phone_k: "Phone",
+          contact_where_k: "Where are we?",
+          contact_where_v: "3rd floor, wing 1 by student services",
+          hours_title: "Opening hours",
+          hours_chip: "Mon–Fri",
+          day_mon: "Monday",
+          day_tue: "Tuesday",
+          day_wed: "Wednesday",
+          day_thu: "Thursday",
+          day_fri: "Friday",
+          hours_note: "If needed, you can also request a time via the booking form.",
+          footer_contact: "Contact",
+          footer_phone_k: "Phone:",
+          footer_email_link: "Send email",
+          footer_secure_post: "Send secure digital post",
+          footer_links: "Links",
+          footer_address: "Address",
+          footer_visit: "Visiting address",
+          footer_map: "View on map",
+          footer_privacy: "Privacy",
+          footer_cookies: "Cookies",
+          footer_accessibility: "Accessibility statement"
+        }
+      };
+
+      const select = document.getElementById("langSelect");
+      const saved = localStorage.getItem("lang") || "nb";
+
+      function applyLang(lang) {
+        const dict = translations[lang] || translations.nb;
+
+        document.title = dict.page_title;
+        document.documentElement.lang = (lang === "en") ? "en" : (lang === "nn" ? "nn" : "no");
+
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key] != null) el.textContent = dict[key];
+        });
+
+        localStorage.setItem("lang", lang);
+      }
+
+      select.value = saved;
+      applyLang(saved);
+      select.addEventListener("change", (e) => applyLang(e.target.value));
+    })();
+  </script>
 </body>
 </html>

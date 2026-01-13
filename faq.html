@@ -16,28 +16,41 @@
         <img src="assets/img/logo.png" alt="Hamar katedralskole" class="logo" />
         <span class="brand-text">
           <span class="brand-title">Hamar katedralskole</span>
-          <span class="brand-sub">Skolehelsetjenesten</span>
+          <span class="brand-sub" data-i18n="brand_sub">Skolehelsetjenesten</span>
         </span>
       </a>
 
-      <nav class="nav" aria-label="Hovedmeny">
-        <a class="nav-link" href="index.html">Forside</a>
-        <a class="nav-link is-active" href="faq.html">FAQ</a>
-        <a class="nav-link" href="bestill.html">Bestill time</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="nav" aria-label="Hovedmeny">
+          <a class="nav-link" href="index.html" data-i18n="nav_home">Forside</a>
+          <a class="nav-link is-active" href="faq.html" data-i18n="nav_faq">FAQ</a>
+          <a class="nav-link" href="bestill.html" data-i18n="nav_booking">Bestill time</a>
+        </nav>
+
+        <div class="lang-switch" aria-label="Language selector">
+          <label class="sr-only" for="langSelect">Language</label>
+          <select id="langSelect" class="lang-select">
+            <option value="nb">Bokmål</option>
+            <option value="nn">Nynorsk</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div>
     </div>
   </header>
 
   <main class="container main">
     <header class="page-head">
-      <h1>Ofte stilte spørsmål</h1>
-      <p class="lead">
+      <h1 data-i18n="faq_title">Ofte stilte spørsmål</h1>
+      <p class="lead" data-i18n="faq_lead">
         Her finner du svar på vanlige spørsmål. Du kan også søke i spørsmålene.
       </p>
 
       <div class="faq-search">
-        <label class="sr-only" for="faqSearch">Søk i FAQ</label>
-        <input id="faqSearch" class="input" type="search" placeholder="Søk… f.eks. taushetsplikt, gratis, time" autocomplete="off">
+        <label class="sr-only" for="faqSearch" data-i18n="faq_search_label">Søk i FAQ</label>
+        <input id="faqSearch" class="input" type="search" autocomplete="off"
+               data-i18n-placeholder="faq_search_ph"
+               placeholder="Søk… f.eks. taushetsplikt, gratis, time">
         <span class="faq-count" id="faqCount" aria-live="polite"></span>
       </div>
     </header>
@@ -47,24 +60,24 @@
         <article class="faq-item" data-tags="gratis pris betaling">
           <h2 class="faq-h">
             <button class="faq-q" type="button" aria-expanded="false">
-              Er skolehelsetjenesten gratis?
+              <span data-i18n="faq_q1">Er skolehelsetjenesten gratis?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
           </h2>
           <div class="faq-a" hidden>
-            <p>Ja. Skolehelsetjenesten er gratis for alle elever.</p>
+            <p data-i18n="faq_a1">Ja. Skolehelsetjenesten er gratis for alle elever.</p>
           </div>
         </article>
 
         <article class="faq-item" data-tags="taushetsplikt konfidensielt foreldre">
           <h2 class="faq-h">
             <button class="faq-q" type="button" aria-expanded="false">
-              Har dere taushetsplikt?
+              <span data-i18n="faq_q2">Har dere taushetsplikt?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
           </h2>
           <div class="faq-a" hidden>
-            <p>
+            <p data-i18n="faq_a2">
               Ja. Vi har taushetsplikt, og samtaler behandles konfidensielt innenfor gjeldende regler.
               Hvis det er alvorlig fare for liv og helse, kan det være nødvendig å involvere flere.
             </p>
@@ -74,28 +87,28 @@
         <article class="faq-item" data-tags="bestille time drop-in avtale">
           <h2 class="faq-h">
             <button class="faq-q" type="button" aria-expanded="false">
-              Må jeg bestille time?
+              <span data-i18n="faq_q3">Må jeg bestille time?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
           </h2>
           <div class="faq-a" hidden>
-            <p>
+            <p data-i18n="faq_a3">
               Du kan ofte komme innom, men vi anbefaler å bestille time for å sikre at vi har tid.
               Bruk gjerne bestillingssiden for å sende en forespørsel.
             </p>
-            <p><a class="link" href="bestill.html">Gå til bestilling</a></p>
+            <p><a class="link" href="bestill.html" data-i18n="faq_link_booking">Gå til bestilling</a></p>
           </div>
         </article>
 
         <article class="faq-item" data-tags="hva kan dere hjelpe med psykisk fysisk seksualitet">
           <h2 class="faq-h">
             <button class="faq-q" type="button" aria-expanded="false">
-              Hva kan jeg snakke med dere om?
+              <span data-i18n="faq_q4">Hva kan jeg snakke med dere om?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
           </h2>
           <div class="faq-a" hidden>
-            <p>
+            <p data-i18n="faq_a4">
               Du kan snakke med oss om det meste: stress, uro, søvn, vennskap, kropp, trivsel, seksualitet,
               prevensjon, småplager og generelle spørsmål om helse.
             </p>
@@ -105,13 +118,13 @@
         <article class="faq-item" data-tags="akutt hjelp 113 legevakt haster">
           <h2 class="faq-h">
             <button class="faq-q" type="button" aria-expanded="false">
-              Hva gjør jeg hvis det haster?
+              <span data-i18n="faq_q5">Hva gjør jeg hvis det haster?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
           </h2>
           <div class="faq-a" hidden>
-            <p>
-              Hvis situasjonen er akutt, ta kontakt med legevakt eller ring <strong>113</strong>.
+            <p data-i18n="faq_a5">
+              Hvis situasjonen er akutt, ta kontakt med legevakt eller ring 113.
               Du kan også kontakte en voksen du stoler på (lærer, rådgiver, foresatt).
             </p>
           </div>
@@ -120,12 +133,12 @@
         <article class="faq-item" data-tags="anonymt navn personvern">
           <h2 class="faq-h">
             <button class="faq-q" type="button" aria-expanded="false">
-              Kan jeg komme uten å si navnet mitt?
+              <span data-i18n="faq_q6">Kan jeg komme uten å si navnet mitt?</span>
               <span class="faq-icon" aria-hidden="true"></span>
             </button>
           </h2>
           <div class="faq-a" hidden>
-            <p>
+            <p data-i18n="faq_a6">
               Du kan alltid starte med å forklare situasjonen. I noen tilfeller trenger vi navn for å følge opp,
               men vi prøver å gjøre det trygt og enkelt å ta kontakt.
             </p>
@@ -134,22 +147,22 @@
       </div>
 
       <div class="faq-empty" id="faqEmpty" hidden>
-        <p><strong>Ingen treff.</strong> Prøv et annet søkeord (f.eks. «taushetsplikt» eller «time»).</p>
+        <p><strong data-i18n="faq_empty_bold">Ingen treff.</strong> <span data-i18n="faq_empty_text">Prøv et annet søkeord (f.eks. «taushetsplikt» eller «time»).</span></p>
       </div>
     </section>
 
     <section class="section section-resources">
       <div class="resources-card">
-        <h2 class="section-title">Nyttige ressurser</h2>
-        <p class="section-lead">
+        <h2 class="section-title" data-i18n="res_title">Nyttige ressurser</h2>
+        <p class="section-lead" data-i18n="res_lead">
           Hvis du trenger noen å snakke med utenom skolens åpningstider:
         </p>
         <ul class="resources-list">
-          <li><strong>Helsenorge</strong> – informasjon om helse og rettigheter</li>
-          <li><strong>Legevakt</strong> – ved akutt behov</li>
-          <li><strong>113</strong> – medisinsk nødhjelp (akutt)</li>
+          <li><strong data-i18n="res_1_b">Helsenorge</strong> <span data-i18n="res_1_t">– informasjon om helse og rettigheter</span></li>
+          <li><strong data-i18n="res_2_b">Legevakt</strong> <span data-i18n="res_2_t">– ved akutt behov</span></li>
+          <li><strong>113</strong> <span data-i18n="res_3_t">– medisinsk nødhjelp (akutt)</span></li>
         </ul>
-        <p class="small-note">Dette er en prototype – innhold kan tilpasses skolens offisielle informasjon.</p>
+        <p class="small-note" data-i18n="res_note">Dette er en prototype – innhold kan tilpasses skolens offisielle informasjon.</p>
       </div>
     </section>
   </main>
@@ -160,46 +173,213 @@
         <img src="assets/img/logo.png" alt="Hamar katedralskole" class="footer-logo" />
         <div>
           <div class="footer-brand-title">Hamar katedralskole</div>
-          <div class="footer-brand-sub">Skolehelsetjenesten</div>
+          <div class="footer-brand-sub" data-i18n="brand_sub">Skolehelsetjenesten</div>
         </div>
       </div>
     </div>
 
     <div class="container footer-grid">
       <div class="footer-col">
-        <h4>Kontakt oss</h4>
+        <h4 data-i18n="footer_contact">Kontakt oss</h4>
         <div class="footer-line"></div>
-        <p class="footer-item"><strong>Telefon:</strong> 12 34 56 78</p>
-        <p class="footer-item"><a href="#">Send e-post</a></p>
-        <p class="footer-item"><a href="#">Send sikker digital post</a></p>
+        <p class="footer-item"><strong data-i18n="footer_phone_k">Telefon:</strong> 12 34 56 78</p>
+        <p class="footer-item"><a href="#" data-i18n="footer_email_link">Send e-post</a></p>
+        <p class="footer-item"><a href="#" data-i18n="footer_secure_post">Send sikker digital post</a></p>
       </div>
 
       <div class="footer-col">
-        <h4>Lenker</h4>
+        <h4 data-i18n="footer_links">Lenker</h4>
         <div class="footer-line"></div>
-        <p class="footer-item"><a href="index.html">Forside</a></p>
-        <p class="footer-item"><a href="faq.html">FAQ</a></p>
-        <p class="footer-item"><a href="bestill.html">Bestill time</a></p>
+        <p class="footer-item"><a href="index.html" data-i18n="nav_home">Forside</a></p>
+        <p class="footer-item"><a href="faq.html" data-i18n="nav_faq">FAQ</a></p>
+        <p class="footer-item"><a href="bestill.html" data-i18n="nav_booking">Bestill time</a></p>
       </div>
 
       <div class="footer-col">
-        <h4>Adresse</h4>
+        <h4 data-i18n="footer_address">Adresse</h4>
         <div class="footer-line"></div>
-        <p class="footer-item"><strong>Besøksadresse</strong><br>Ringgata 235<br>2315 Hamar</p>
-        <p class="footer-item"><a href="#">Vis i kart</a></p>
+        <p class="footer-item"><strong data-i18n="footer_visit">Besøksadresse</strong><br>Ringgata 235<br>2315 Hamar</p>
+        <p class="footer-item"><a href="#" data-i18n="footer_map">Vis i kart</a></p>
       </div>
     </div>
 
     <div class="container footer-bottom">
       <div class="footer-bottom-links">
-        <a href="#">Personvern</a>
-        <a href="#">Informasjonskapsler (cookies)</a>
-        <a href="#">Tilgjengelighetserklæring</a>
+        <a href="#" data-i18n="footer_privacy">Personvern</a>
+        <a href="#" data-i18n="footer_cookies">Informasjonskapsler (cookies)</a>
+        <a href="#" data-i18n="footer_accessibility">Tilgjengelighetserklæring</a>
       </div>
       <div class="footer-copy">© Hamar katedralskole</div>
     </div>
   </footer>
 
   <script src="assets/js/app.js"></script>
+  <script>
+    (function () {
+      const translations = {
+        nb: {
+          page_title: "Skolehelsetjenesten | FAQ",
+          brand_sub: "Skolehelsetjenesten",
+          nav_home: "Forside",
+          nav_faq: "FAQ",
+          nav_booking: "Bestill time",
+          faq_title: "Ofte stilte spørsmål",
+          faq_lead: "Her finner du svar på vanlige spørsmål. Du kan også søke i spørsmålene.",
+          faq_search_label: "Søk i FAQ",
+          faq_search_ph: "Søk… f.eks. taushetsplikt, gratis, time",
+          faq_q1: "Er skolehelsetjenesten gratis?",
+          faq_a1: "Ja. Skolehelsetjenesten er gratis for alle elever.",
+          faq_q2: "Har dere taushetsplikt?",
+          faq_a2: "Ja. Vi har taushetsplikt, og samtaler behandles konfidensielt innenfor gjeldende regler. Hvis det er alvorlig fare for liv og helse, kan det være nødvendig å involvere flere.",
+          faq_q3: "Må jeg bestille time?",
+          faq_a3: "Du kan ofte komme innom, men vi anbefaler å bestille time for å sikre at vi har tid. Bruk gjerne bestillingssiden for å sende en forespørsel.",
+          faq_link_booking: "Gå til bestilling",
+          faq_q4: "Hva kan jeg snakke med dere om?",
+          faq_a4: "Du kan snakke med oss om det meste: stress, uro, søvn, vennskap, kropp, trivsel, seksualitet, prevensjon, småplager og generelle spørsmål om helse.",
+          faq_q5: "Hva gjør jeg hvis det haster?",
+          faq_a5: "Hvis situasjonen er akutt, ta kontakt med legevakt eller ring 113. Du kan også kontakte en voksen du stoler på (lærer, rådgiver, foresatt).",
+          faq_q6: "Kan jeg komme uten å si navnet mitt?",
+          faq_a6: "Du kan alltid starte med å forklare situasjonen. I noen tilfeller trenger vi navn for å følge opp, men vi prøver å gjøre det trygt og enkelt å ta kontakt.",
+          faq_empty_bold: "Ingen treff.",
+          faq_empty_text: "Prøv et annet søkeord (f.eks. «taushetsplikt» eller «time»).",
+          res_title: "Nyttige ressurser",
+          res_lead: "Hvis du trenger noen å snakke med utenom skolens åpningstider:",
+          res_1_b: "Helsenorge",
+          res_1_t: "– informasjon om helse og rettigheter",
+          res_2_b: "Legevakt",
+          res_2_t: "– ved akutt behov",
+          res_3_t: "– medisinsk nødhjelp (akutt)",
+          res_note: "Dette er en prototype – innhold kan tilpasses skolens offisielle informasjon.",
+          footer_contact: "Kontakt oss",
+          footer_phone_k: "Telefon:",
+          footer_email_link: "Send e-post",
+          footer_secure_post: "Send sikker digital post",
+          footer_links: "Lenker",
+          footer_address: "Adresse",
+          footer_visit: "Besøksadresse",
+          footer_map: "Vis i kart",
+          footer_privacy: "Personvern",
+          footer_cookies: "Informasjonskapsler (cookies)",
+          footer_accessibility: "Tilgjengelighetserklæring"
+        },
+        nn: {
+          page_title: "Skulehelsetenesta | FAQ",
+          brand_sub: "Skulehelsetenesta",
+          nav_home: "Framside",
+          nav_faq: "FAQ",
+          nav_booking: "Bestill time",
+          faq_title: "Ofte stilte spørsmål",
+          faq_lead: "Her finn du svar på vanlege spørsmål. Du kan òg søkje i spørsmåla.",
+          faq_search_label: "Søk i FAQ",
+          faq_search_ph: "Søk… t.d. teieplikt, gratis, time",
+          faq_q1: "Er skulehelsetenesta gratis?",
+          faq_a1: "Ja. Skulehelsetenesta er gratis for alle elevar.",
+          faq_q2: "Har de teieplikt?",
+          faq_a2: "Ja. Vi har teieplikt, og samtalar blir handsama konfidensielt etter gjeldande reglar. Dersom det er alvorleg fare for liv og helse, kan det vere nødvendig å involvere fleire.",
+          faq_q3: "Må eg bestille time?",
+          faq_a3: "Du kan ofte kome innom, men vi tilrår å bestille time for å vere sikker på at vi har tid. Bruk gjerne bestillingssida for å sende ein førespurnad.",
+          faq_link_booking: "Gå til bestilling",
+          faq_q4: "Kva kan eg snakke med dykk om?",
+          faq_a4: "Du kan snakke med oss om det meste: stress, uro, søvn, vennskap, kropp, trivsel, seksualitet, prevensjon, småplager og generelle spørsmål om helse.",
+          faq_q5: "Kva gjer eg om det hastar?",
+          faq_a5: "Dersom situasjonen er akutt, ta kontakt med legevakt eller ring 113. Du kan òg kontakte ein vaksen du stolar på (lærar, rådgjevar, føresett).",
+          faq_q6: "Kan eg kome utan å seie namnet mitt?",
+          faq_a6: "Du kan alltid starte med å forklare situasjonen. I nokre tilfelle treng vi namn for å følgje opp, men vi prøver å gjere det trygt og enkelt å ta kontakt.",
+          faq_empty_bold: "Ingen treff.",
+          faq_empty_text: "Prøv eit anna søkjeord (t.d. «teieplikt» eller «time»).",
+          res_title: "Nyttige ressursar",
+          res_lead: "Om du treng nokon å snakke med utanom opningstidene:",
+          res_1_b: "Helsenorge",
+          res_1_t: "– informasjon om helse og rettar",
+          res_2_b: "Legevakt",
+          res_2_t: "– ved akutt behov",
+          res_3_t: "– medisinsk naudhjelp (akutt)",
+          res_note: "Dette er ein prototype – innhald kan tilpassast skulen si offisielle informasjon.",
+          footer_contact: "Kontakt oss",
+          footer_phone_k: "Telefon:",
+          footer_email_link: "Send e-post",
+          footer_secure_post: "Send sikker digital post",
+          footer_links: "Lenker",
+          footer_address: "Adresse",
+          footer_visit: "Besøksadresse",
+          footer_map: "Vis i kart",
+          footer_privacy: "Personvern",
+          footer_cookies: "Informasjonskapslar (cookies)",
+          footer_accessibility: "Tilgjengefråsegn"
+        },
+        en: {
+          page_title: "School Health Service | FAQ",
+          brand_sub: "School Health Service",
+          nav_home: "Home",
+          nav_faq: "FAQ",
+          nav_booking: "Book appointment",
+          faq_title: "Frequently asked questions",
+          faq_lead: "Here you’ll find answers to common questions. You can also search the questions.",
+          faq_search_label: "Search FAQ",
+          faq_search_ph: "Search… e.g. confidentiality, free, appointment",
+          faq_q1: "Is the school health service free?",
+          faq_a1: "Yes. The school health service is free for all students.",
+          faq_q2: "Do you have confidentiality rules?",
+          faq_a2: "Yes. We follow confidentiality rules and conversations are handled according to applicable regulations. If there is serious risk to life and health, it may be necessary to involve others.",
+          faq_q3: "Do I need to book an appointment?",
+          faq_a3: "You can often drop in, but we recommend booking to make sure we have time. Use the booking page to send a request.",
+          faq_link_booking: "Go to booking",
+          faq_q4: "What can I talk to you about?",
+          faq_a4: "You can talk to us about most things: stress, anxiety, sleep, friendships, body, wellbeing, sexuality, contraception, minor issues and general health questions.",
+          faq_q5: "What should I do if it’s urgent?",
+          faq_a5: "If it’s urgent, contact the emergency clinic or call 113. You can also contact a trusted adult (teacher, counsellor, guardian).",
+          faq_q6: "Can I come without telling my name?",
+          faq_a6: "You can always start by explaining the situation. In some cases we need your name to follow up, but we try to make it safe and easy to reach out.",
+          faq_empty_bold: "No results.",
+          faq_empty_text: "Try a different keyword (e.g. “confidentiality” or “appointment”).",
+          res_title: "Useful resources",
+          res_lead: "If you need someone to talk to outside school hours:",
+          res_1_b: "Helsenorge",
+          res_1_t: "– information about health and rights",
+          res_2_b: "Emergency clinic",
+          res_2_t: "– for urgent needs",
+          res_3_t: "– medical emergency (urgent)",
+          res_note: "This is a prototype — content can be adapted to the school’s official information.",
+          footer_contact: "Contact",
+          footer_phone_k: "Phone:",
+          footer_email_link: "Send email",
+          footer_secure_post: "Send secure digital post",
+          footer_links: "Links",
+          footer_address: "Address",
+          footer_visit: "Visiting address",
+          footer_map: "View on map",
+          footer_privacy: "Privacy",
+          footer_cookies: "Cookies",
+          footer_accessibility: "Accessibility statement"
+        }
+      };
+
+      const select = document.getElementById("langSelect");
+      const saved = localStorage.getItem("lang") || "nb";
+
+      function applyLang(lang) {
+        const dict = translations[lang] || translations.nb;
+
+        document.title = dict.page_title;
+        document.documentElement.lang = (lang === "en") ? "en" : (lang === "nn" ? "nn" : "no");
+
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+          const key = el.getAttribute("data-i18n");
+          if (dict[key] != null) el.textContent = dict[key];
+        });
+
+        document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+          const key = el.getAttribute("data-i18n-placeholder");
+          if (dict[key] != null) el.setAttribute("placeholder", dict[key]);
+        });
+
+        localStorage.setItem("lang", lang);
+      }
+
+      select.value = saved;
+      applyLang(saved);
+      select.addEventListener("change", (e) => applyLang(e.target.value));
+    })();
+  </script>
 </body>
 </html>
